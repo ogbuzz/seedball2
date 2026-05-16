@@ -109,3 +109,97 @@ nav.language-switcher-language-url {
   pointer-events: none;
   cursor: default;
 }
+
+/* ============================================================
+   8. MENU MOBILE — Espace entre "Log in" et le switcher EN | FR
+   ============================================================ */
+
+@media (max-width: 1280px) {
+  nav.language-switcher-language-url {
+    margin-left: 1.5rem;
+  }
+}
+
+
+
+/* ============================================================
+   9. WORLD INDEX — Carte horizontale (image gauche / texte droite)
+   ============================================================ */
+
+.view-world-index .views-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 0 1.5rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #e0d5c8;
+  align-items: start;
+}
+
+.view-world-index .views-field-field-featured-image {
+  grid-column: 1;
+  grid-row: 1 / 99;
+}
+
+.view-world-index .views-field-field-featured-image img {
+  display: block;
+  width: 220px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.view-world-index .views-row > *:not(.views-field-field-featured-image) {
+  grid-column: 2;
+}
+
+/* Mobile — empilement vertical */
+@media (max-width: 600px) {
+  .view-world-index .views-row {
+    grid-template-columns: 1fr;
+  }
+
+  .view-world-index .views-field-field-featured-image {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .view-world-index .views-field-field-featured-image img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .view-world-index .views-row > *:not(.views-field-field-featured-image) {
+    grid-column: 1;
+  }
+}
+
+.view-world-index .views-field-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+}
+
+.view-world-index .views-field-field-organization {
+  font-size: 0.9rem;
+  color: #5a4a3a;
+  margin-bottom: 0.1rem;
+}
+
+.view-world-index .views-field-field-external-url {
+  font-size: 0.8rem;
+  color: #5c7f3a;
+  margin-bottom: 0.2rem;
+}
+
+.view-world-index .views-field-field-description {
+  font-size: 0.88rem;
+  color: #2e1f10;
+  margin-bottom: 0.2rem;
+  line-height: 1.5;
+}
+
+.view-world-index .views-field-field-status,
+.view-world-index .views-field-field-type {
+  font-size: 0.78rem;
+  color: #888;
+}
