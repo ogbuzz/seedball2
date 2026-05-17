@@ -203,3 +203,60 @@ nav.language-switcher-language-url {
   font-size: 0.78rem;
   color: #888;
 }
+
+
+/* ============================================================
+   10. LAYOUT BUILDER STYLES
+   ============================================================ */
+
+/* Section CTA — fond vert */
+.sp-cta-section {
+  background: #5c7f3a;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 6px;
+  margin-top: 2rem;
+}
+
+.sp-cta-section h2,
+.sp-cta-section p,
+.sp-cta-section em {
+  color: #fff;
+}
+
+.sp-cta-section .button,
+.sp-cta-section a.button {
+  background: #e57e25;
+  color: #fff;
+  border: none;
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.sp-cta-section .button:hover {
+  background: #c96d1a;
+  color: #fff;
+}
+
+/* Bloc carte */
+.sp-card-block {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 1.25rem;
+  height: 100%;
+}
+
+.sp-card-block img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 0.75rem;
+}

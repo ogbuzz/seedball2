@@ -22,6 +22,7 @@
         "drupal/core-recommended": "^11.3",
         "drupal/facets": "^3.0",
         "drupal/gin": "^5.0",
+        "drupal/layout_builder_styles": "^2.1",
         "drupal/metatag": "^2.2",
         "drupal/pathauto": "^1.15",
         "drupal/search_api": "^1.40",
