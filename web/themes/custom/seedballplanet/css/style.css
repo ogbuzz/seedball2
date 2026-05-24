@@ -254,7 +254,7 @@ nav.language-switcher-language-url {
 
 .sp-card-block img {
   width: 100%;
-  height: 200px;
+  aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: 4px;
   display: block;
